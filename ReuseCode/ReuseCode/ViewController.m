@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "UIColor+GSHelper.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor GSHexStringToColor:@"#123456"];
+    
 }
 
 

@@ -17,6 +17,8 @@
 		8B84036E27574F5E00578A00 /* ReuseCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84036D27574F5E00578A00 /* ReuseCodeTests.m */; };
 		8B84037827574F5E00578A00 /* ReuseCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84037727574F5E00578A00 /* ReuseCodeUITests.m */; };
 		8B84037A27574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84037927574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m */; };
+		8B84038B2757652A00578A00 /* UIColor+GSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84038A2757652A00578A00 /* UIColor+GSHelper.m */; };
+		8B84038E2757691700578A00 /* UIImage+GSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84038D2757691700578A00 /* UIImage+GSHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		8B84037327574F5E00578A00 /* ReuseCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReuseCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B84037727574F5E00578A00 /* ReuseCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReuseCodeUITests.m; sourceTree = "<group>"; };
 		8B84037927574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReuseCodeUITestsLaunchTests.m; sourceTree = "<group>"; };
+		8B8403892757652A00578A00 /* UIColor+GSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GSHelper.h"; sourceTree = "<group>"; };
+		8B84038A2757652A00578A00 /* UIColor+GSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GSHelper.m"; sourceTree = "<group>"; };
+		8B84038C2757691700578A00 /* UIImage+GSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GSHelper.h"; sourceTree = "<group>"; };
+		8B84038D2757691700578A00 /* UIImage+GSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GSHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 				8B84035527574F5A00578A00 /* SceneDelegate.m */,
 				8B84035727574F5A00578A00 /* ViewController.h */,
 				8B84035827574F5A00578A00 /* ViewController.m */,
+				8B840388275760A600578A00 /* Category */,
+				8B8403872757605E00578A00 /* Networking */,
+				8B84038627575F0600578A00 /* 宏 */,
 				8B84035A27574F5A00578A00 /* Main.storyboard */,
 				8B84035D27574F5E00578A00 /* Assets.xcassets */,
 				8B84035F27574F5E00578A00 /* LaunchScreen.storyboard */,
@@ -134,6 +143,31 @@
 				8B84037927574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m */,
 			);
 			path = ReuseCodeUITests;
+			sourceTree = "<group>";
+		};
+		8B84038627575F0600578A00 /* 宏 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "宏";
+			sourceTree = "<group>";
+		};
+		8B8403872757605E00578A00 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8B840388275760A600578A00 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8B8403892757652A00578A00 /* UIColor+GSHelper.h */,
+				8B84038A2757652A00578A00 /* UIColor+GSHelper.m */,
+				8B84038C2757691700578A00 /* UIImage+GSHelper.h */,
+				8B84038D2757691700578A00 /* UIImage+GSHelper.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B84038B2757652A00578A00 /* UIColor+GSHelper.m in Sources */,
+				8B84038E2757691700578A00 /* UIImage+GSHelper.m in Sources */,
 				8B84035927574F5A00578A00 /* ViewController.m in Sources */,
 				8B84035327574F5A00578A00 /* AppDelegate.m in Sources */,
 				8B84036427574F5E00578A00 /* main.m in Sources */,
