@@ -19,6 +19,7 @@
 		8B84037A27574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84037927574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m */; };
 		8B84038B2757652A00578A00 /* UIColor+GSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84038A2757652A00578A00 /* UIColor+GSHelper.m */; };
 		8B84038E2757691700578A00 /* UIImage+GSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84038D2757691700578A00 /* UIImage+GSHelper.m */; };
+		E971AA01B3F371272B09E993 /* libPods-ReuseCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14F100532EF95DF41801D26 /* libPods-ReuseCode.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050A62538B9375FCA5CB6062 /* Pods-ReuseCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCode.debug.xcconfig"; path = "Target Support Files/Pods-ReuseCode/Pods-ReuseCode.debug.xcconfig"; sourceTree = "<group>"; };
+		7DD6D4851855DFB69C5D2B52 /* Pods-ReuseCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCode.release.xcconfig"; path = "Target Support Files/Pods-ReuseCode/Pods-ReuseCode.release.xcconfig"; sourceTree = "<group>"; };
 		8B84034E27574F5A00578A00 /* ReuseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReuseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B84035127574F5A00578A00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B84035227574F5A00578A00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +63,7 @@
 		8B84038A2757652A00578A00 /* UIColor+GSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GSHelper.m"; sourceTree = "<group>"; };
 		8B84038C2757691700578A00 /* UIImage+GSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GSHelper.h"; sourceTree = "<group>"; };
 		8B84038D2757691700578A00 /* UIImage+GSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GSHelper.m"; sourceTree = "<group>"; };
+		D14F100532EF95DF41801D26 /* libPods-ReuseCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReuseCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E971AA01B3F371272B09E993 /* libPods-ReuseCode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B12B0B4D055AE8BAE29F016 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D14F100532EF95DF41801D26 /* libPods-ReuseCode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B84034527574F5A00578A00 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,8 @@
 				8B84036C27574F5E00578A00 /* ReuseCodeTests */,
 				8B84037627574F5E00578A00 /* ReuseCodeUITests */,
 				8B84034F27574F5A00578A00 /* Products */,
+				8E2B5B42EBFA1D8E937C332F /* Pods */,
+				1B12B0B4D055AE8BAE29F016 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +185,16 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		8E2B5B42EBFA1D8E937C332F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				050A62538B9375FCA5CB6062 /* Pods-ReuseCode.debug.xcconfig */,
+				7DD6D4851855DFB69C5D2B52 /* Pods-ReuseCode.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B84037D27574F5E00578A00 /* Build configuration list for PBXNativeTarget "ReuseCode" */;
 			buildPhases = (
+				1F9787FA59179B8AC9E401A1 /* [CP] Check Pods Manifest.lock */,
 				8B84034A27574F5A00578A00 /* Sources */,
 				8B84034B27574F5A00578A00 /* Frameworks */,
 				8B84034C27574F5A00578A00 /* Resources */,
@@ -294,6 +320,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F9787FA59179B8AC9E401A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReuseCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B84034A27574F5A00578A00 /* Sources */ = {
@@ -475,6 +526,7 @@
 		};
 		8B84037E27574F5E00578A00 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050A62538B9375FCA5CB6062 /* Pods-ReuseCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +553,7 @@
 		};
 		8B84037F27574F5E00578A00 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD6D4851855DFB69C5D2B52 /* Pods-ReuseCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
