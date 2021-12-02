@@ -19,6 +19,7 @@
 		8B84037A27574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84037927574F5E00578A00 /* ReuseCodeUITestsLaunchTests.m */; };
 		8B84038B2757652A00578A00 /* UIColor+GSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84038A2757652A00578A00 /* UIColor+GSHelper.m */; };
 		8B84038E2757691700578A00 /* UIImage+GSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84038D2757691700578A00 /* UIImage+GSHelper.m */; };
+		8B8403912757709000578A00 /* GSNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8403902757709000578A00 /* GSNetworking.m */; };
 		E971AA01B3F371272B09E993 /* libPods-ReuseCode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D14F100532EF95DF41801D26 /* libPods-ReuseCode.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		8B84038A2757652A00578A00 /* UIColor+GSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GSHelper.m"; sourceTree = "<group>"; };
 		8B84038C2757691700578A00 /* UIImage+GSHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+GSHelper.h"; sourceTree = "<group>"; };
 		8B84038D2757691700578A00 /* UIImage+GSHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GSHelper.m"; sourceTree = "<group>"; };
+		8B84038F2757709000578A00 /* GSNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSNetworking.h; sourceTree = "<group>"; };
+		8B8403902757709000578A00 /* GSNetworking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSNetworking.m; sourceTree = "<group>"; };
 		D14F100532EF95DF41801D26 /* libPods-ReuseCode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReuseCode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -170,6 +173,8 @@
 		8B8403872757605E00578A00 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				8B84038F2757709000578A00 /* GSNetworking.h */,
+				8B8403902757709000578A00 /* GSNetworking.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -191,7 +196,6 @@
 				050A62538B9375FCA5CB6062 /* Pods-ReuseCode.debug.xcconfig */,
 				7DD6D4851855DFB69C5D2B52 /* Pods-ReuseCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -353,6 +357,7 @@
 			files = (
 				8B84038B2757652A00578A00 /* UIColor+GSHelper.m in Sources */,
 				8B84038E2757691700578A00 /* UIImage+GSHelper.m in Sources */,
+				8B8403912757709000578A00 /* GSNetworking.m in Sources */,
 				8B84035927574F5A00578A00 /* ViewController.m in Sources */,
 				8B84035327574F5A00578A00 /* AppDelegate.m in Sources */,
 				8B84036427574F5E00578A00 /* main.m in Sources */,
