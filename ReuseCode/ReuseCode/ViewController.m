@@ -7,6 +7,9 @@
 
 #import "ViewController.h"
 #import "UIColor+GSHelper.h"
+#import "Father.h"
+#import <objc/runtime.h>
+
 
 @interface ViewController ()
 
@@ -17,9 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor GSHexStringToColor:@"#123456"];
     
+    Person *p = [[Person alloc] init];
+    [p eat];
+    
+    Father *f = [[Father alloc] init];
+   
 }
+
+
+
+
 
 
 @end

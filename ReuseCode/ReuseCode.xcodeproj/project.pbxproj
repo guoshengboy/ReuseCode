@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B79A9C8275EF7810082592D /* NSObject+GSRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79A9C7275EF7810082592D /* NSObject+GSRuntime.m */; };
+		8B79A9CF275F2B550082592D /* UIViewController+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79A9CE275F2B550082592D /* UIViewController+Runtime.m */; };
+		8B79A9D527604E860082592D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79A9D427604E860082592D /* Person.m */; };
+		8B79A9D827604E9A0082592D /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B79A9D727604E9A0082592D /* Father.m */; };
 		8B84035327574F5A00578A00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84035227574F5A00578A00 /* AppDelegate.m */; };
 		8B84035627574F5A00578A00 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84035527574F5A00578A00 /* SceneDelegate.m */; };
 		8B84035927574F5A00578A00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B84035827574F5A00578A00 /* ViewController.m */; };
@@ -43,6 +47,14 @@
 /* Begin PBXFileReference section */
 		050A62538B9375FCA5CB6062 /* Pods-ReuseCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCode.debug.xcconfig"; path = "Target Support Files/Pods-ReuseCode/Pods-ReuseCode.debug.xcconfig"; sourceTree = "<group>"; };
 		7DD6D4851855DFB69C5D2B52 /* Pods-ReuseCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReuseCode.release.xcconfig"; path = "Target Support Files/Pods-ReuseCode/Pods-ReuseCode.release.xcconfig"; sourceTree = "<group>"; };
+		8B79A9C6275EF7810082592D /* NSObject+GSRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+GSRuntime.h"; sourceTree = "<group>"; };
+		8B79A9C7275EF7810082592D /* NSObject+GSRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GSRuntime.m"; sourceTree = "<group>"; };
+		8B79A9CD275F2B550082592D /* UIViewController+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Runtime.h"; sourceTree = "<group>"; };
+		8B79A9CE275F2B550082592D /* UIViewController+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Runtime.m"; sourceTree = "<group>"; };
+		8B79A9D327604E860082592D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8B79A9D427604E860082592D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		8B79A9D627604E9A0082592D /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		8B79A9D727604E9A0082592D /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
 		8B84034E27574F5A00578A00 /* ReuseCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReuseCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B84035127574F5A00578A00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B84035227574F5A00578A00 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +115,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B79A9C9275F03AF0082592D /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				8B79A9CD275F2B550082592D /* UIViewController+Runtime.h */,
+				8B79A9CE275F2B550082592D /* UIViewController+Runtime.m */,
+				8B79A9D327604E860082592D /* Person.h */,
+				8B79A9D427604E860082592D /* Person.m */,
+				8B79A9D627604E9A0082592D /* Father.h */,
+				8B79A9D727604E9A0082592D /* Father.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		8B84034527574F5A00578A00 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +159,7 @@
 				8B84035527574F5A00578A00 /* SceneDelegate.m */,
 				8B84035727574F5A00578A00 /* ViewController.h */,
 				8B84035827574F5A00578A00 /* ViewController.m */,
+				8B79A9C9275F03AF0082592D /* Test */,
 				8B840388275760A600578A00 /* Category */,
 				8B8403872757605E00578A00 /* Networking */,
 				8B84038627575F0600578A00 /* 宏 */,
@@ -186,6 +212,8 @@
 				8B84038A2757652A00578A00 /* UIColor+GSHelper.m */,
 				8B84038C2757691700578A00 /* UIImage+GSHelper.h */,
 				8B84038D2757691700578A00 /* UIImage+GSHelper.m */,
+				8B79A9C6275EF7810082592D /* NSObject+GSRuntime.h */,
+				8B79A9C7275EF7810082592D /* NSObject+GSRuntime.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -355,12 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B79A9C8275EF7810082592D /* NSObject+GSRuntime.m in Sources */,
 				8B84038B2757652A00578A00 /* UIColor+GSHelper.m in Sources */,
+				8B79A9D527604E860082592D /* Person.m in Sources */,
 				8B84038E2757691700578A00 /* UIImage+GSHelper.m in Sources */,
+				8B79A9CF275F2B550082592D /* UIViewController+Runtime.m in Sources */,
 				8B8403912757709000578A00 /* GSNetworking.m in Sources */,
 				8B84035927574F5A00578A00 /* ViewController.m in Sources */,
 				8B84035327574F5A00578A00 /* AppDelegate.m in Sources */,
 				8B84036427574F5E00578A00 /* main.m in Sources */,
+				8B79A9D827604E9A0082592D /* Father.m in Sources */,
 				8B84035627574F5A00578A00 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
